@@ -1,0 +1,1698 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aladin Analytics — Dubai Gold &amp; Precious Metals Intelligence Platform</title>
+<!-- SEO Meta -->
+<meta content="Dubai Gold Souk intelligence platform. AI-powered market analysis for precious metals traders, bullion banks, and institutional desks. DMCC licensed. Serving Dubai, UAE and global markets." name="description"/>
+<meta content="Dubai gold, Dubai Gold Souk, gold trading Dubai, precious metals Dubai, DMCC gold, bullion trading, gold market intelligence, Dubai bullion, UAE gold trading, institutional gold trading" name="keywords"/>
+<meta content="Aladin Analytics DMCC" name="author"/>
+<!-- Open Graph -->
+<meta content="Aladin Analytics — Dubai Gold &amp; Precious Metals Intelligence" property="og:title"/>
+<meta content="AI-powered market intelligence for Dubai Gold Souk traders, bullion banks, and institutional desks. DMCC Licensed." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://aladinanalytics.ai" property="og:url"/>
+<meta content="https://aladinanalytics.ai/og-image.png" property="og:image"/>
+<!-- Twitter Card -->
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Aladin Analytics — Dubai Gold &amp; Precious Metals Intelligence" name="twitter:title"/>
+<meta content="AI-powered market intelligence for Dubai Gold Souk traders and institutional desks. DMCC Licensed." name="twitter:description"/>
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Aladin Analytics DMCC",
+  "alternateName": "Aladin Analytics",
+  "url": "https://aladinanalytics.ai",
+  "logo": "https://aladinanalytics.ai/logo.png",
+  "description": "AI-powered precious metals intelligence platform for Dubai Gold Souk traders, bullion banks, and institutional desks.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressCountry": "UAE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "info@aladinanalytics.ai",
+    "contactType": "customer service"
+  },
+  "sameAs": []
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Aladin Analytics DMCC",
+  "description": "Dubai Gold Souk intelligence platform. AI-powered market analysis for precious metals traders and institutional desks.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dubai",
+    "addressRegion": "Dubai",
+    "addressCountry": "AE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "25.2697",
+    "longitude": "55.2963"
+  },
+  "url": "https://aladinanalytics.ai",
+  "priceRange": "$$$",
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
+<!-- Favicon (replace with your actual favicon) -->
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;polygon points='32 4, 60 32, 32 60, 4 32' fill='none' stroke='%23d4af37' stroke-width='4'/&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
+<!-- Preconnect for performance -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://assets.calendly.com" rel="preconnect"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<!-- Calendly Widget CSS -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+<style>
+    :root {
+      --bg-dark: #050505;
+      --bg-elevated: #0a0a0a;
+      --bg-card: #0f0f0f;
+      --bg-card-hover: #141414;
+      --text-primary: #ffffff;
+      --text-secondary: #a3a3a3;
+      --text-muted: #737373;
+      --accent: #d4af37;
+      --accent-hover: #e5c349;
+      --accent-dim: rgba(212, 175, 55, 0.12);
+      --border: #1a1a1a;
+      --border-hover: #2a2a2a;
+      --success: #22c55e;
+      --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f4e4bc 50%, #d4af37 100%);
+      --gradient-dark: linear-gradient(180deg, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+    }
+
+    * { 
+      box-sizing: border-box; 
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Selection styling */
+    ::selection {
+      background: var(--accent);
+      color: var(--bg-dark);
+    }
+
+    a { 
+      color: inherit; 
+      text-decoration: none; 
+      transition: all 0.2s ease;
+    }
+
+    /* Typography */
+    .mono {
+      font-family: 'Space Mono', monospace;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section {
+      padding: 120px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(5, 5, 5, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .mark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.02);
+      transition: all 0.3s ease;
+    }
+
+    .mark:hover {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .logo {
+      font-family: 'Space Mono', monospace;
+      font-size: 14px;
+      letter-spacing: 4px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-links a:not(.nav-cta) {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: var(--text-secondary);
+      position: relative;
+    }
+
+    .nav-links a:not(.nav-cta):hover {
+      color: var(--text-primary);
+    }
+
+    .nav-links a:not(.nav-cta)::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+
+    .nav-links a:not(.nav-cta):hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: var(--bg-dark);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+    }
+
+    /* Mobile menu */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 140px 24px 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -200px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+      height: 1000px;
+      background: radial-gradient(ellipse, rgba(212, 175, 55, 0.04) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    /* Animated grid background */
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-mark {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: rgba(255,255,255,0.02);
+      margin: 0 auto 40px;
+      animation: float 6s ease-in-out infinite;
+      position: relative;
+    }
+
+    .hero-mark::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: 24px;
+      padding: 1px;
+      background: linear-gradient(135deg, var(--accent), transparent, var(--accent));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0.5;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: 300;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+      max-width: 800px;
+    }
+
+    .hero h1 span {
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(16px, 2vw, 18px);
+      color: var(--text-secondary);
+      max-width: 580px;
+      margin: 0 auto 48px;
+      line-height: 1.8;
+    }
+
+    .hero-disarm {
+      font-size: 14px;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      margin: -32px auto 48px;
+      max-width: 600px;
+      font-style: italic;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 18px 36px;
+      background: var(--accent);
+      color: var(--bg-dark);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 18px 36px;
+      background: transparent;
+      color: var(--text-primary);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--text-secondary);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .hero-badge {
+      margin-top: 60px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+    }
+
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--success);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+      50% { opacity: 0.8; box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+    }
+
+    .hero-badge span {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      color: var(--text-secondary);
+    }
+
+    /* Primary Objective Anchor */
+    .objective-anchor {
+      background: var(--bg-elevated);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 48px 0;
+      text-align: center;
+    }
+
+    .objective-anchor h3 {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .objective-anchor p {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* Section Headers */
+    .section-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      line-height: 1.8;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .section-header .section-subtitle {
+      margin: 0 auto;
+    }
+
+    /* Trust Section */
+    .trust-section {
+      background: var(--bg-elevated);
+      padding: 60px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .trust-label {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #a3a3a3;
+      margin-bottom: 32px;
+    }
+
+    .trust-logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 48px;
+      flex-wrap: wrap;
+    }
+
+    .trust-logo {
+      font-family: 'Space Mono', monospace;
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: #d4d4d4;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+
+    .trust-logo:hover {
+      opacity: 1;
+      color: #ffffff;
+    }
+
+    /* How to Read Section */
+    .how-to-read {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px;
+      max-width: 800px;
+      margin: 0 auto 80px;
+    }
+
+    .how-to-read h3 {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .how-to-read ul {
+      list-style: none;
+    }
+
+    .how-to-read li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .how-to-read li:last-child {
+      border-bottom: none;
+    }
+
+    .how-to-read li strong {
+      color: var(--text-primary);
+    }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 40px 32px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .feature-card:hover {
+      background: var(--bg-card-hover);
+      transform: translateY(-4px);
+      border-color: var(--border-hover);
+    }
+
+    .feature-card:hover::before {
+      opacity: 0.5;
+    }
+
+    .feature-icon {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-dim);
+      border-radius: 14px;
+      margin-bottom: 24px;
+    }
+
+    .feature-icon svg {
+      width: 26px;
+      height: 26px;
+      color: var(--accent);
+    }
+
+    .feature-card h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .feature-card p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Stats */
+    .stats-section {
+      background: var(--bg-elevated);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 24px;
+    }
+
+    .stat-value {
+      font-family: 'Space Mono', monospace;
+      font-size: clamp(36px, 5vw, 52px);
+      font-weight: 700;
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 13px;
+      color: var(--text-secondary);
+      letter-spacing: 1px;
+    }
+
+    .traction-context {
+      margin: 44px auto 0;
+      text-align: center;
+      font-size: 15px;
+      color: rgba(255,255,255,0.85);
+      max-width: 760px;
+    }
+
+    /* Process Steps */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 48px;
+      position: relative;
+    }
+
+    .process-grid::before {
+      content: '';
+      position: absolute;
+      top: 44px;
+      left: 20%;
+      right: 20%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), var(--border), transparent);
+    }
+
+    .process-step {
+      text-align: center;
+      position: relative;
+    }
+
+    .process-number {
+      width: 88px;
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      font-family: 'Space Mono', monospace;
+      font-size: 28px;
+      font-weight: 700;
+      color: var(--accent);
+      position: relative;
+      z-index: 1;
+      transition: all 0.3s ease;
+    }
+
+    .process-step:hover .process-number {
+      border-color: var(--accent);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+    }
+
+    .process-step h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .process-step p {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      align-items: start;
+    }
+
+    .pricing-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 44px 36px;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .pricing-card.featured {
+      border-color: var(--accent);
+      background: linear-gradient(180deg, rgba(212, 175, 55, 0.06) 0%, var(--bg-card) 100%);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 8px 20px;
+      background: var(--accent);
+      color: var(--bg-dark);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      border-radius: 100px;
+    }
+
+    .pricing-tier {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .pricing-name {
+      font-size: 26px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .pricing-price {
+      display: flex;
+      align-items: baseline;
+      gap: 2px;
+      margin-bottom: 20px;
+    }
+
+    .pricing-currency {
+      font-size: 22px;
+      color: var(--text-secondary);
+    }
+
+    .pricing-amount {
+      font-family: 'Space Mono', monospace;
+      font-size: 48px;
+      font-weight: 700;
+    }
+
+    .pricing-period {
+      font-size: 14px;
+      color: var(--text-secondary);
+    }
+
+    .pricing-description {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+
+    .pricing-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .pricing-features li:last-child {
+      border-bottom: none;
+    }
+
+    .pricing-features svg {
+      width: 18px;
+      height: 18px;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .pricing-cta {
+      width: 100%;
+      padding: 16px;
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .pricing-cta:hover {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .pricing-card.featured .pricing-cta {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--bg-dark);
+    }
+
+    .pricing-card.featured .pricing-cta:hover {
+      background: var(--accent-hover);
+    }
+
+    /* FAQ */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item:hover {
+      border-color: var(--border-hover);
+    }
+
+    .faq-question {
+      font-size: 17px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      line-height: 1.4;
+    }
+
+    .faq-answer {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+      padding: 120px 24px;
+      background: var(--gradient-dark);
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta-section h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .cta-section p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      margin-bottom: 36px;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-elevated);
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Market Widget */
+    .market-widget {
+      margin: 48px auto;
+      max-width: 580px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .market-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .market-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .market-item span:first-child {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+    }
+
+    .market-item span:last-child {
+      font-family: 'Space Mono', monospace;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .market-states {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .state-pill {
+      padding: 8px 16px;
+      background: rgba(34, 197, 94, 0.15);
+      border-radius: 100px;
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #22c55e;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .features-grid,
+      .pricing-grid,
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .features-grid,
+      .pricing-grid,
+      .process-grid,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .process-grid::before {
+        display: none;
+      }
+
+      .section {
+        padding: 80px 0;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .how-to-read {
+        padding: 32px 24px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 28px;
+      }
+
+      .pricing-amount {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header>
+<nav class="nav">
+<a class="brand" href="index.html">
+<span aria-label="Aladin symbol" class="mark">
+<svg height="22" viewbox="0 0 64 64" width="22" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="none" points="32 4, 60 32, 32 60, 4 32" stroke="currentColor" stroke-width="2"></polygon>
+<path d="M16 32 C16 18, 28 18, 32 32 C28 46, 16 46, 16 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<path d="M48 32 C48 18, 36 18, 32 32 C36 46, 48 46, 48 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<circle cx="32" cy="32" fill="none" r="3.5" stroke="currentColor" stroke-width="1.5"></circle>
+</svg>
+</span>
+<span class="logo">ALADIN™</span>
+</a>
+<div class="nav-links">
+<a href="#features">FEATURES</a>
+<a href="#pricing">PRICING</a>
+<a href="methodology.html">METHODOLOGY</a>
+<a href="about.html">ABOUT</a>
+<a href="#faq">FAQ</a>
+<button class="nav-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</div>
+<button class="mobile-menu-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</nav>
+</header>
+<main>
+<!-- Hero -->
+<section class="hero">
+<div class="hero-content">
+<div aria-hidden="true" class="hero-mark">
+<svg height="56" viewbox="0 0 64 64" width="56" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="none" points="32 4, 60 32, 32 60, 4 32" stroke="currentColor" stroke-width="2"></polygon>
+<path d="M16 32 C16 18, 28 18, 32 32 C28 46, 16 46, 16 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<path d="M48 32 C48 18, 36 18, 32 32 C36 46, 48 46, 48 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<circle cx="32" cy="32" fill="none" r="3.5" stroke="currentColor" stroke-width="1.5"></circle>
+</svg>
+</div>
+<h1>Aladin™ AI &amp; Quantum <span>Precious Metals Intelligence Platform</span></h1>
+<p class="hero-subtitle">
+  Aladin™ is an AI &amp; quantum intelligence platform built to preserve capital in the world's most opaque market — transforming decades of macro and micro precious-metals data into state-aware intelligence.
+</p>
+<p class="hero-disarm">
+  Not a forecast. Not a signal service. A regime-aware intelligence system for capital preservation.
+</p>
+<div class="market-widget" data-widget="hero-market">
+<div class="market-row">
+<div class="market-item"><span>XAU/USD</span><span>2348.20</span></div>
+<div class="market-item"><span>XAG/USD</span><span>30.15</span></div>
+<div class="market-item"><span>XPT/USD</span><span>935.40</span></div>
+<div class="market-item"><span>XPD/USD</span><span>1022.60</span></div>
+</div>
+<div class="market-states">
+<span class="state-pill">MACRO REGIME: STABLE</span>
+<span class="state-pill">SOUK PRESSURE: NORMAL</span>
+</div>
+<div style="text-align:center; margin-top:12px; font-size:10px; color:#525252; letter-spacing:1px;">INDICATIVE</div>
+</div>
+<div class="hero-cta-group">
+<button class="btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+<a class="btn-secondary" href="#pricing">
+          View Pricing
+        </a>
+</div>
+<div class="hero-badge">
+<span class="hero-badge-dot"></span>
+<span>DMCC LICENSED · DUBAI, UAE</span>
+</div>
+</div>
+</section>
+
+<!-- Primary Objective Anchor -->
+<section class="objective-anchor">
+<div class="container">
+<h3>Primary Objective</h3>
+<p>Capital preservation under uncertainty — not short-term optimization. Aladin™ exists to support disciplined restraint when market structure is impaired, and measured participation when conditions are sound.</p>
+</div>
+</section>
+
+<!-- Trust Logos -->
+<section class="trust-section">
+<p class="trust-label">COVERAGE ACROSS GLOBAL PRICE DISCOVERY CENTERS</p>
+<div class="trust-logos">
+<span class="trust-logo">LBMA LONDON</span>
+<span class="trust-logo">COMEX</span>
+<span class="trust-logo">SGE SHANGHAI</span>
+<span class="trust-logo">MCX MUMBAI</span>
+<span class="trust-logo">LME</span>
+<span class="trust-logo">DGCX DUBAI</span>
+</div>
+</section>
+
+<!-- Features -->
+<section class="section" id="features">
+<div class="container">
+<div class="section-header">
+<p class="section-label">Platform Capabilities</p>
+<h2 class="section-title">Intelligence Infrastructure</h2>
+<p class="section-subtitle">
+  Aladin™ sequences decades of macroeconomic and microstructural data into <strong>persistent state memory</strong> spanning over 25 years — pre-processed into <strong>quantum-ready state structures</strong> for consistent Macro state identification and capital-relevant execution environments.
+</p>
+</div>
+
+<!-- How Institutions Should Read ALADIN -->
+<div class="how-to-read">
+<h3>How Institutions Should Read ALADIN™</h3>
+<ul>
+<li><strong>What ALADIN highlights:</strong> Market regime identity, transition pressures, and execution quality conditions — enabling informed decisions about when participation is structurally supported.</li>
+<li><strong>What ALADIN deliberately withholds:</strong> Point forecasts, price targets, and directional trade recommendations. ALADIN™ intentionally avoids point forecasts and trade recommendations.</li>
+<li><strong>When inaction is the correct outcome:</strong> When price discovery is degraded, spreads are artificially widened, or market structure signals fragility — restraint is the appropriate institutional response.</li>
+</ul>
+</div>
+
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<path d="M12 6v6l4 2"></path>
+</svg>
+</div>
+<h3>Real-Time Market Awareness</h3>
+<p>Continuous monitoring across <strong>LBMA London, COMEX, Shanghai, MCX, and DGCX Dubai</strong> — optimized for price-discovery conditions and execution readiness.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+</svg>
+</div>
+<h3>Market Structure Insights</h3>
+<p>State-based analysis of dealer behavior, liquidity structure, and spread efficiency — clarifying execution quality and identifying emerging Micro/Macro state transitions.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+</svg>
+</div>
+<h3>Macro State Intelligence Engine</h3>
+<p>Identifies market state identity, dominant signals, and transition pressure — producing a coherent picture of macro and micro evolution.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+</svg>
+</div>
+<h3>Execution Context</h3>
+<p>Defines when engagement is warranted, when restraint is required, and which conditions must hold for disciplined action in physical markets.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+</svg>
+</div>
+<h3>Souk Pressure Index™</h3>
+<p>Proprietary index measuring dealer pressure, liquidity conditions, and spread discipline across Dubai Gold Souk networks.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+</svg>
+</div>
+<h3>Institutional Intelligence Reports</h3>
+<p>Daily AM/PM Pulse, Weekly Metals Intelligence, and Monthly Macro State Intelligence Reports — structured around <strong>transition dynamics and capital posture</strong>.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats / Subscriber Traction (v2) -->
+<section class="section stats-section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">ALADIN™ INSTITUTIONAL ENGAGEMENT</p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">100+</div>
+        <div class="stat-label">Gold Souk Bullion Participants</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">25+</div>
+        <div class="stat-label">Jewelry Groups (Design &amp; Retail)</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">6+</div>
+        <div class="stat-label">Major Global Exchanges</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">24/7/365</div>
+        <div class="stat-label">Micro/Macro State Monitoring</div>
+      </div>
+    </div>
+    <p class="traction-context">
+      Institutional engagement reflects operational relevance across physical bullion, wholesale, and global price-discovery venues — not retail popularity.
+    </p>
+  </div>
+</section>
+<!-- Who This Is For -->
+<section class="section">
+<div class="container">
+<div class="section-header">
+<p class="section-label" style="font-size: 13px;">Who It's For</p>
+<h2 class="section-title">Precious Metals Traders and Institutions</h2>
+<p class="section-subtitle">
+        Built by a DMCC-licensed Dubai bullion trader for physical market decision-makers who require clarity, governance, and execution discipline.
+      </p>
+</div>
+<div class="features-grid">
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+</svg>
+</div>
+<h3>Gold Souk Traders</h3>
+<p>Daily AM/PM execution context for disciplined participation under real-world spread dynamics and physical market constraints.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+<path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+</svg>
+</div>
+<h3>Gold Souk Wholesalers</h3>
+<p>Inventory and margin protection through market-quality awareness — supporting informed decisions on when to engage and when to remain patient.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+<path d="M12 2.5l2.5 5.5 6 .5-4.5 4 1.5 6-5.5-3-5.5 3 1.5-6-4.5-4 6-.5L12 2.5z"></path>
+</svg>
+</div>
+<h3>Jewelry Retail Groups</h3>
+<p>Operational intelligence for hedging posture, replenishment timing, and pricing confidence — aligned with physical inventory realities.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+<path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+</svg>
+</div>
+<h3>Banks &amp; Bullion Desks</h3>
+<p>Capital-preserving intelligence for institutions managing balance-sheet exposure — supporting disciplined deployment and execution governance.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+</svg>
+</div>
+<h3>Sovereign &amp; Institutional Desks</h3>
+<p>Long-horizon state memory supporting strategic exposure — prioritizing preservation, continuity, and disciplined capital rotation.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">
+<svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+<path d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
+</svg>
+</div>
+<h3>DMCC &amp; Market Infrastructure</h3>
+<p>Transparency-oriented intelligence layer supporting verification, controlled distribution, and institutional standards.</p>
+</div>
+</div>
+<div style="max-width: 860px; margin: 72px auto 0; text-align:center;">
+<p class="section-label" style="font-size: 14px; text-align:center;">Who It's Not For</p>
+<h3 style="text-align:center; font-size: 22px; font-weight: 500; margin-bottom: 12px;">Not Built for Retail Speculation</h3>
+<p style="text-align:center; color: var(--text-secondary); line-height: 1.85;">
+        Aladin is not designed for retail speculation, signal-copy services, or high-frequency day trading.
+        Access is intentionally controlled to protect market integrity, intelligence quality, and the standards expected of <strong>DMCC-licensed operators</strong>.
+      </p>
+</div>
+</div>
+</section>
+<!-- How It Works -->
+<section class="section">
+<div class="container">
+<div class="section-header">
+<p class="section-label">How It Works</p>
+<h2 class="section-title">From Observation to Execution</h2>
+<p class="section-subtitle">Built for capital preservation first. Aladin prioritizes execution clarity and macro state discipline — ensuring participation occurs only when conditions are structurally sound.</p>
+</div>
+<div class="process-grid">
+<div class="process-step">
+<div class="process-number">01</div>
+<h3>Observe</h3>
+<p>Continuous observation across global venues and local execution contexts. Raw macro and micro inputs are structured into desk-ready intelligence, without assuming clean price discovery.</p>
+</div>
+<div class="process-step">
+<div class="process-number">02</div>
+<h3>Classify</h3>
+<p>Quantum state machines classify market conditions by state identity and transition dynamics — defining engagement bands where execution quality is intact and patience is strategically rewarded.</p>
+</div>
+<div class="process-step">
+<div class="process-number">03</div>
+<h3>Execute</h3>
+<p>Unbiased guidance — cautiously encouraging participation when conditions are robust, explicitly favoring restraint when price discovery is impaired or market structure is fragile.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing -->
+<section class="section" id="pricing">
+<div class="container">
+<div class="section-header">
+<p class="section-label">Subscription Tiers</p>
+<h2 class="section-title">Institutional Pricing</h2>
+<p class="section-subtitle"><strong>All subscriptions are priced in USD.</strong><br/>
+
+          Three tiers designed for different institutional requirements. All subscriptions require DMCC verification and bank-to-bank payment for governance and auditability.
+        </p>
+</div>
+<div class="pricing-grid">
+<!-- T1 -->
+<div class="pricing-card">
+<div class="pricing-tier">TIER 1</div>
+<h3 class="pricing-name">Daily Pulse</h3>
+<div class="pricing-price">
+<span class="pricing-currency">$</span>
+<span class="pricing-amount">500</span>
+<span class="pricing-period">/mo</span>
+</div>
+<p class="pricing-description">Daily execution intelligence for physical precious-metals operators.</p>
+<ul class="pricing-features">
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Daily AM &amp; PM Market Pulse (7 days per week)
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Souk Pressure Index™ updates
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Daily Souk &amp; Spread Alerts
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Secure DRM-controlled delivery
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              1 authorized user (governance-controlled access)
+            </li>
+</ul>
+<button class="pricing-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</div>
+<!-- T2 Featured -->
+<div class="pricing-card featured">
+<span class="pricing-badge">Institutional Standard</span>
+<div class="pricing-tier">TIER 2</div>
+<h3 class="pricing-name">Professional</h3>
+<div class="pricing-price">
+<span class="pricing-currency">$</span>
+<span class="pricing-amount">1,500</span>
+<span class="pricing-period">/mo</span>
+</div>
+<p class="pricing-description">Weekly intelligence for desks requiring decision systems and macro state awareness.</p>
+<ul class="pricing-features">
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Everything in Daily Pulse
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Weekly Metals Intelligence (4 reports per month)
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Weekly Macro State Intelligence &amp; Spread Analysis
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Monthly Metals Intelligence — Standard Edition
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Priority support
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Up to 2 authorized users (audit-controlled access)
+            </li>
+</ul>
+<button class="pricing-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</div>
+<!-- T3 -->
+<div class="pricing-card">
+<div class="pricing-tier">TIER 3</div>
+<h3 class="pricing-name">Institutional</h3>
+<div class="pricing-price">
+<span class="pricing-currency">$</span>
+<span class="pricing-amount">5,000</span>
+<span class="pricing-period">/mo</span>
+</div>
+<p class="pricing-description">Sovereign-grade research for institutions prioritizing capital preservation and governance.</p>
+<ul class="pricing-features">
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Everything in Professional
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Monthly Metals Intelligence Letter (Full Edition)
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Quarterly Metals Intelligence Report (Institutional Edition)
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Mid-Year &amp; Annual Macro State Reviews
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Dedicated account manager
+            </li>
+<li>
+<svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7"></path></svg>
+              Limited authorized users with download privileges (for internal governance workflows)
+            </li>
+</ul>
+<button class="pricing-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ (v2) -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-grid">
+      <!-- Q1 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          Is Aladin™ a trading platform?
+        </div>
+        <p class="faq-answer">
+          No. Aladin™ is decision infrastructure. We do not execute trades or provide signals.
+          The platform delivers state-aware intelligence and governance-ready research so institutions
+          can act with discipline — or stand down with confidence when market structure is impaired.
+        </p>
+      </div>
+      <!-- Q2 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          Why does Aladin™ institutional engagement matter?
+        </div>
+        <p class="faq-answer">
+          Global refineries actively subscribe to Aladin's monthly and enterprise-grade research coverage,
+          with ongoing enterprise discussions involving institutional banks, metals desks, and hedge funds.<br/><br/>
+          Dubai supports tens of billions of dollars in annual precious-metals inflows and outflows and facilitates
+          a significant share of global physical gold trade each year — making institutional standards,
+          adoption discipline, and execution integrity essential.<br/><br/>
+          Institutional engagement reflects operational relevance and governance alignment, not retail popularity.
+        </p>
+      </div>
+      <!-- Q3 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          How does Aladin™ justify value without making performance claims?
+        </div>
+        <p class="faq-answer">
+          Aladin™ does not forecast prices or promise returns. It focuses on identifying when market conditions
+          are structurally sound — and when restraint is warranted due to degraded price discovery,
+          dealer behavior, or liquidity stress.<br/><br/>
+          In practice, institutions often justify the subscription by avoiding a small number of
+          low-quality execution windows over the course of a year.
+        </p>
+      </div>
+      <!-- Q4 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          How is Aladin™ intelligence delivered and controlled?
+        </div>
+        <p class="faq-answer">
+          Intelligence is delivered via secure, DRM-controlled distribution with watermarking,
+          access controls, and tier-based permissions.<br/><br/>
+          Access privileges are <strong>tiered by subscription level</strong> as a governance measure — with higher institutional
+          tiers granted limited download rights to support internal compliance workflows, while standard tiers
+          maintain controlled access to preserve distribution integrity and auditability.
+        </p>
+      </div>
+      <!-- Q5 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          How should institutions think about the cost of Aladin™?
+        </div>
+        <p class="faq-answer">
+          Subscription costs typically represent approximately two basis points of annual turnover
+          for active market participants — positioning Aladin™ as an operational intelligence expense,
+          not a speculative cost.<br/><br/>
+          The platform is designed to support execution discipline and capital preservation,
+          rather than continuous activity.
+        </p>
+      </div>
+      <!-- Q6 -->
+      <div class="faq-item">
+        <div class="faq-question">
+          Why are access controls and user limits imposed?
+        </div>
+        <p class="faq-answer">
+          Access controls exist for governance, auditability, and risk-control purposes — not as feature restrictions.
+          Controlled distribution ensures intelligence quality, protects market integrity, and maintains
+          the institutional standards required by DMCC-licensed operators and sovereign-grade clients.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA -->
+<section class="cta-section">
+<div class="cta-content">
+<p class="section-label">Get Started</p>
+<h2>Request Institutional Access</h2>
+<p>Schedule a briefing to discuss your intelligence requirements and begin onboarding. DMCC-licensed operators only.</p>
+<button class="btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer>
+<div class="footer-content">
+<div class="footer-brand">
+<span aria-label="Aladin symbol" class="mark">
+<svg height="18" viewbox="0 0 64 64" width="18" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="none" points="32 4, 60 32, 32 60, 4 32" stroke="currentColor" stroke-width="2"></polygon>
+<path d="M16 32 C16 18, 28 18, 32 32 C28 46, 16 46, 16 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<path d="M48 32 C48 18, 36 18, 32 32 C36 46, 48 46, 48 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<circle cx="32" cy="32" fill="none" r="3.5" stroke="currentColor" stroke-width="1.5"></circle>
+</svg>
+</span>
+<span class="footer-copy">© 2025 Aladin Analytics DMCC · Dubai, UAE · Institutional Use Only</span>
+</div>
+<div class="footer-links">
+<span style="color: var(--text-secondary);">info[at]aladinanalytics[dot]ai</span>
+<a href="terms.html">Terms of Service</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="about.html">About</a>
+</div>
+<div class="footer-social" style="display:flex; gap:16px; margin-top:16px;">
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/company/aladin-analytics" target="_blank" rel="noopener" aria-label="LinkedIn" style="color:var(--text-secondary); transition:color 0.3s;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='var(--text-secondary)'">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+<!-- Spotify (links to LinkedIn) -->
+<a href="https://www.linkedin.com/company/aladin-analytics" target="_blank" rel="noopener" aria-label="Spotify" style="color:var(--text-secondary); transition:color 0.3s;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='var(--text-secondary)'">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+</a>
+<!-- X/Twitter (links to LinkedIn) -->
+<a href="https://www.linkedin.com/company/aladin-analytics" target="_blank" rel="noopener" aria-label="X" style="color:var(--text-secondary); transition:color 0.3s;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='var(--text-secondary)'">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+</a>
+<!-- YouTube (links to LinkedIn) -->
+<a href="https://www.linkedin.com/company/aladin-analytics" target="_blank" rel="noopener" aria-label="YouTube" style="color:var(--text-secondary); transition:color 0.3s;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='var(--text-secondary)'">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
+</div>
+</footer>
+<!-- Calendly Widget Script -->
+<script async="" src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+<!-- Calendly Floating Button (appears on all pages) -->
+<script type="text/javascript">
+  window.onload = function() {
+    Calendly.initBadgeWidget({ 
+      url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&background_color=0a0a0a&text_color=ffffff&primary_color=d4af37', 
+      text: 'Request Access', 
+      color: '#d4af37', 
+      textColor: '#050505',
+      branding: false
+    });
+  }
+</script>
+</body>
+</html>
