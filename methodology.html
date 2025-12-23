@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Methodology — Aladin Analytics</title>
+<meta content="ALADIN™ methodology for institutional precious metals intelligence. Regime-based decision support for capital preservation." name="description"/>
+<meta content="Aladin Analytics DMCC" name="author"/>
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;polygon points='32 4, 60 32, 32 60, 4 32' fill='none' stroke='%23d4af37' stroke-width='4'/&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet"/>
+<style>
+    :root {
+      --bg-dark: #050505;
+      --bg-elevated: #0a0a0a;
+      --bg-card: #0f0f0f;
+      --bg-card-hover: #141414;
+      --text-primary: #ffffff;
+      --text-secondary: #a3a3a3;
+      --text-muted: #737373;
+      --accent: #d4af37;
+      --accent-hover: #e5c349;
+      --accent-dim: rgba(212, 175, 55, 0.12);
+      --border: #1a1a1a;
+      --border-hover: #2a2a2a;
+      --success: #22c55e;
+      --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f4e4bc 50%, #d4af37 100%);
+    }
+
+    * { 
+      box-sizing: border-box; 
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: var(--accent);
+      color: var(--bg-dark);
+    }
+
+    a { 
+      color: inherit; 
+      text-decoration: none; 
+      transition: all 0.2s ease;
+    }
+
+    .mono {
+      font-family: 'Space Mono', monospace;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(5, 5, 5, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      z-index: 1000;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .mark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.02);
+      transition: all 0.3s ease;
+    }
+
+    .mark:hover {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .logo {
+      font-family: 'Space Mono', monospace;
+      font-size: 14px;
+      letter-spacing: 4px;
+      font-weight: 700;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-links a:not(.nav-cta) {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      color: var(--text-secondary);
+      position: relative;
+    }
+
+    .nav-links a:not(.nav-cta):hover {
+      color: var(--text-primary);
+    }
+
+    .nav-links a:not(.nav-cta).active {
+      color: var(--accent);
+    }
+
+    .nav-cta {
+      padding: 12px 24px;
+      background: var(--accent);
+      color: var(--bg-dark);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+
+    /* Page Header */
+    .page-header {
+      padding: 160px 24px 80px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .page-title {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
+
+    .page-subtitle {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* Content */
+    .content {
+      padding: 80px 24px;
+    }
+
+    .content-section {
+      margin-bottom: 72px;
+    }
+
+    .content-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-label {
+      font-family: 'Space Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      line-height: 1.9;
+      margin-bottom: 20px;
+    }
+
+    .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content p strong {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* Highlight Block */
+    .highlight-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin: 32px 0;
+    }
+
+    .highlight-block p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 0;
+      font-style: italic;
+    }
+
+    /* Comparison Box */
+    .comparison-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin: 32px 0;
+    }
+
+    .comparison-column {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+    }
+
+    .comparison-column h4 {
+      font-family: 'Space Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+    }
+
+    .comparison-column.is h4 {
+      color: var(--success);
+    }
+
+    .comparison-column.is-not h4 {
+      color: #ef4444;
+    }
+
+    .comparison-column ul {
+      list-style: none;
+    }
+
+    .comparison-column li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .comparison-column li:last-child {
+      border-bottom: none;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 72px 0;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      text-align: center;
+      padding: 80px 24px;
+      background: var(--bg-elevated);
+      border-top: 1px solid var(--border);
+    }
+
+    .cta-section h2 {
+      font-size: 28px;
+      font-weight: 300;
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      font-size: 16px;
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 36px;
+      background: var(--accent);
+      color: var(--bg-dark);
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(212, 175, 55, 0.35);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--bg-elevated);
+      border-top: 1px solid var(--border);
+      padding: 48px 24px;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-copy {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .comparison-box {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<header>
+<nav class="nav">
+<a class="brand" href="index.html">
+<span aria-label="Aladin symbol" class="mark">
+<svg height="22" viewBox="0 0 64 64" width="22" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="none" points="32 4, 60 32, 32 60, 4 32" stroke="currentColor" stroke-width="2"></polygon>
+<path d="M16 32 C16 18, 28 18, 32 32 C28 46, 16 46, 16 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<path d="M48 32 C48 18, 36 18, 32 32 C36 46, 48 46, 48 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<circle cx="32" cy="32" fill="none" r="3.5" stroke="currentColor" stroke-width="1.5"></circle>
+</svg>
+</span>
+<span class="logo">ALADIN™</span>
+</a>
+<div class="nav-links">
+<a href="index.html#features">FEATURES</a>
+<a href="index.html#pricing">PRICING</a>
+<a href="methodology.html" class="active">METHODOLOGY</a>
+<a href="about.html">ABOUT</a>
+<a href="index.html#faq">FAQ</a>
+<button class="nav-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</div>
+<button class="mobile-menu-btn" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</nav>
+</header>
+
+<main>
+<!-- Page Header -->
+<section class="page-header">
+<p class="page-label">Methodology</p>
+<h1 class="page-title">Decision Framework</h1>
+<p class="page-subtitle">How ALADIN™ supports capital-allocation decisions under uncertainty while preserving methodological discipline.</p>
+</section>
+
+<!-- Content -->
+<section class="content">
+<div class="container">
+
+<!-- Opening Philosophy -->
+<div class="content-section">
+<p class="section-label">Philosophy</p>
+<h2 class="section-title">Decision Support, Not Prediction</h2>
+<p>ALADIN™ exists to support capital-allocation decisions — not to predict market direction. The platform is designed around a single governing principle: <strong>capital preservation takes precedence over activity</strong>.</p>
+<p>This means that inaction is a valid and intentional outcome. When market conditions are ambiguous, when evidence conflicts, or when structural integrity is compromised, the appropriate response is restraint. ALADIN™ does not pressure participants toward engagement.</p>
+<p>The methodology is built to identify when conditions support disciplined participation — and when they do not. Both conclusions carry equal weight.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- Regime-Based Framework -->
+<div class="content-section">
+<p class="section-label">Framework</p>
+<h2 class="section-title">Regime-Based Evaluation</h2>
+<p>Markets are not evaluated through point estimates or price targets. Instead, ALADIN™ assesses market conditions through <strong>regimes</strong> — persistent states that reflect stability, stress, liquidity, and price discovery quality.</p>
+<p>A regime describes the structural environment in which prices form. Some regimes support clean execution and reliable price discovery. Others reflect fragility, dealer stress, or impaired liquidity. The distinction matters more than the price itself.</p>
+<p>Regime shifts — transitions between states — carry greater significance than short-term price movements. A shift may indicate changing structural conditions, emerging stress, or improving stability. ALADIN™ prioritizes the recognition of these transitions over reactive responses to price.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- Evidence Aggregation -->
+<div class="content-section">
+<p class="section-label">Discipline</p>
+<h2 class="section-title">Evidence Aggregation</h2>
+<p>ALADIN™ draws on multiple independent evidence classes. No single input dominates the assessment. This is intentional.</p>
+<p>When evidence converges — when multiple independent sources align — confidence increases. When evidence conflicts, confidence degrades. <strong>Conflicting evidence reduces certainty rather than forcing conclusions.</strong></p>
+<p>This discipline prevents overreliance on any single indicator, data source, or model output. It also prevents the system from manufacturing certainty where none exists.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- Confidence Degradation -->
+<div class="content-section">
+<p class="section-label">Restraint</p>
+<h2 class="section-title">Confidence Degradation</h2>
+<p>Confidence is not assumed. It is earned through evidence alignment and structural coherence. When these conditions are absent, confidence degrades.</p>
+<p>Degraded confidence is not a failure — it is information. It signals that conditions do not support high-conviction action. In such cases, ALADIN™ prefers restraint over false precision.</p>
+<p>This matters institutionally. Capital allocators face pressure to act. ALADIN™ provides a framework for resisting that pressure when conditions do not warrant engagement. Preserving capital during periods of uncertainty is not passive — it is an active, disciplined choice.</p>
+
+<div class="highlight-block">
+<p>When confidence is low, the correct institutional response is often to wait. ALADIN™ supports that decision explicitly.</p>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Narrative Governance -->
+<div class="content-section">
+<p class="section-label">Output</p>
+<h2 class="section-title">Narrative Governance</h2>
+<p>ALADIN™ outputs are expressed as structured narratives — not raw signals, not dashboards, not score arrays. This is a deliberate design choice.</p>
+<p>Narratives reflect evidence strength and uncertainty in a form that supports institutional decision-making. They communicate not only what the system observes, but how confident it is in those observations and what conditions would change that assessment.</p>
+<p>Interpretability matters more than signal density. A clear, well-bounded assessment supports better decisions than a high-frequency stream of opaque outputs. ALADIN™ prioritizes the former.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- Model-Agnostic Architecture -->
+<div class="content-section">
+<p class="section-label">Architecture</p>
+<h2 class="section-title">Model-Agnostic Design</h2>
+<p>The methodology is independent of any single model or technique. Machine learning, statistical methods, or quantum-inspired approaches may be employed — and may evolve over time.</p>
+<p>What remains stable is the decision framework itself: regime-based evaluation, evidence aggregation, confidence governance, and narrative output. These principles persist regardless of the underlying computational methods.</p>
+<p>This separation ensures that methodological discipline is not tied to any particular implementation. The framework can adapt to new techniques without compromising its core function.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- Governance & Boundaries -->
+<div class="content-section">
+<p class="section-label">Governance</p>
+<h2 class="section-title">Boundaries and Controls</h2>
+
+<div class="highlight-block">
+<p>ALADIN™ intentionally avoids point forecasts and trade recommendations.</p>
+</div>
+
+<p>This boundary is a governance choice, not a limitation. Point forecasts invite misuse, false precision, and accountability structures that do not serve institutional interests. By withholding them, ALADIN™ maintains its function as decision support rather than decision replacement.</p>
+<p>Access controls exist for similar reasons. Controlled distribution protects intelligence quality, ensures auditability, and prevents misuse. These are features of institutional governance — not restrictions on value.</p>
+<p>The platform is designed to support disciplined participants operating under institutional constraints. Access and output structures reflect that design.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- What ALADIN Is / Is Not -->
+<div class="content-section">
+<p class="section-label">Clarity</p>
+<h2 class="section-title">What ALADIN™ Is and Is Not</h2>
+
+<div class="comparison-box">
+<div class="comparison-column is">
+<h4>WHAT IT IS</h4>
+<ul>
+<li>Decision-support infrastructure</li>
+<li>Regime-aware market intelligence</li>
+<li>Capital preservation framework</li>
+<li>Structured narrative output</li>
+<li>Governance-aligned methodology</li>
+<li>Institutional-grade research</li>
+</ul>
+</div>
+<div class="comparison-column is-not">
+<h4>WHAT IT IS NOT</h4>
+<ul>
+<li>A trading platform</li>
+<li>A signal service</li>
+<li>A forecasting engine</li>
+<li>A performance optimizer</li>
+<li>A retail product</li>
+<li>A replacement for judgment</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Closing -->
+<div class="content-section">
+<p class="section-label">Perspective</p>
+<h2 class="section-title">Longevity Over Opportunity</h2>
+<p>Capital preservation is not about avoiding all risk. It is about ensuring that risk is taken deliberately, under conditions that support sound execution, with full awareness of structural constraints.</p>
+<p>ALADIN™ is designed for participants who measure success across cycles — not trades. The methodology reflects this orientation. It prioritizes longevity, discipline, and structural awareness over short-term opportunity capture.</p>
+<p>In markets where price discovery is often impaired, where information asymmetry is structural, and where execution quality varies, the ability to recognize unfavorable conditions — and to act accordingly — is itself a form of edge.</p>
+<p>That recognition is what ALADIN™ provides.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+<h2>Request Institutional Access</h2>
+<p>Schedule a briefing to discuss how ALADIN™ supports your capital preservation objectives.</p>
+<button class="btn-primary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/nash-vedula-aladinanalytics/30min?hide_gdpr_banner=1&amp;background_color=0a0a0a&amp;text_color=ffffff&amp;primary_color=d4af37'});return false;">Request Access</button>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+<div class="footer-content">
+<div class="footer-brand">
+<span aria-label="Aladin symbol" class="mark">
+<svg height="18" viewBox="0 0 64 64" width="18" xmlns="http://www.w3.org/2000/svg">
+<polygon fill="none" points="32 4, 60 32, 32 60, 4 32" stroke="currentColor" stroke-width="2"></polygon>
+<path d="M16 32 C16 18, 28 18, 32 32 C28 46, 16 46, 16 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<path d="M48 32 C48 18, 36 18, 32 32 C36 46, 48 46, 48 32" fill="none" stroke="currentColor" stroke-width="1.4"></path>
+<circle cx="32" cy="32" fill="none" r="3.5" stroke="currentColor" stroke-width="1.5"></circle>
+</svg>
+</span>
+<span class="footer-copy">© 2025 Aladin Analytics DMCC · Dubai, UAE · Institutional Use Only</span>
+</div>
+<div class="footer-links">
+<span style="color: var(--text-secondary);">info[at]aladinanalytics[dot]ai</span>
+<a href="terms.html">Terms of Service</a>
+<a href="privacy.html">Privacy Policy</a>
+<a href="about.html">About</a>
+</div>
+<div class="footer-social" style="display:flex; gap:16px; margin-top:16px;">
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/company/aladin-analytics" target="_blank" rel="noopener" style="color:var(--text-secondary); transition:color 0.3s;" onmouseover="this.style.color='#d4af37'" onmouseout="this.style.color='var(--text-secondary)'">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+</a>
+</div>
+</div>
+</footer>
+
+<script async="" src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+</body>
+</html>
